@@ -7,6 +7,7 @@ import DrivingForm from "../Components/Driving/DrivingForm";
 import Services from "./Create/Services/Services";
 import Seller from "./Create/Seller/Seller";
 import MoreInfo from "./Create/Seller/MoreInfo";
+import SignIn from "../Components/SignInPage/SignIn";
 
 const CRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const CRoutes = () => {
       <Route path="/create/services" element={<Services />} />
       <Route path="/create/seller" element={<Seller />} />
       <Route path="/create/seller/moreinfo" element={<MoreInfo />} />
+      <Route path="/signin" element={<SignIn />} />
     </Routes>
   );
 };

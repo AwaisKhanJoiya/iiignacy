@@ -1,0 +1,30 @@
+.sign-form-container {
+  background-color: darkblue;
+  height: 100vh;
+}
+.s-form {
+  height: 50vh;
+}
+.d-form-heading {
+  color: darkblue;
+  font-weight: 700;
+}
+.btn_div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign_btn {
+  background-color: darkblue;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 6px;
+  padding: 8px 26px;
+  font-size: 20px;
+}
+.link {
+  color: darkblue;
+  font-weight: 600;
+}
