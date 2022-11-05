@@ -1,13 +1,18 @@
 .sign-form-container {
-  background-color: darkblue;
+  background-color: #004581;
   height: 100vh;
 }
-.s-form {
-  height: 50vh;
+.sign-form-container * {
+  color: white;
 }
-.d-form-heading {
-  color: darkblue;
-  font-weight: 700;
+
+.signin_input {
+  outline: none;
+  border: 1px solid white;
+  color: black;
+}
+.signin_input:focus {
+  border: 1px solid gray;
 }
 .btn_div {
   width: 100%;
@@ -16,13 +21,16 @@
   align-items: center;
 }
 .sign_btn {
-  background-color: darkblue;
+  background-color: #d70040;
   border: none;
   outline: none;
   color: white;
   border-radius: 6px;
   padding: 8px 26px;
   font-size: 20px;
+}
+.sign_btn:hover {
+  background: #d22b2b;
 }
 .link {
   color: darkblue;

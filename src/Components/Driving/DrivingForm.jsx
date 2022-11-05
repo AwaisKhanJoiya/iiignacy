@@ -1,7 +1,10 @@
 import BackButton from "../BackButton";
 import CloseIcon from "../CloseIcon";
+import { useParams } from "react-router-dom";
 
 const DrivingForm = () => {
+  const { type } = useParams();
+  console.log(type);
   return (
     <div className="p-4 d-form-container">
       <BackButton />

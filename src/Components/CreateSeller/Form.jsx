@@ -32,7 +32,7 @@ const Form = ({ setSelected }) => {
         </button>
         <p className="mt-3">
           Already have an account?
-          <Link to="/login">
+          <Link to="/signin">
             <span className="link ms-2">Sign In</span>
           </Link>
         </p>

@@ -170,6 +170,9 @@ a {
   font-size: 2.4rem;
   float: right;
 }
+.signin {
+  margin: 9px;
+}
 .c-button {
   color: black;
   width: 20rem;
@@ -234,6 +237,9 @@ a {
   outline: none;
   border-radius: 5px;
   border: 1px solid gray;
+}
+.s-form-input * {
+  color: black;
 }
 .f-btn {
   background: #1dbf73;
@@ -302,6 +308,14 @@ a {
 }
 .s-input-box input {
   width: 100%;
+  padding: 0.5rem 0.7rem;
+  outline: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border: none;
+}
+.s-input-box select {
   padding: 0.5rem 0.7rem;
   outline: none;
   color: black;
@@ -390,13 +404,14 @@ a {
   font-size: 1.2rem;
 }
 .stepBox.inProgress .stepNum {
-  border-color: #c7511f;
-  color: #c7511f;
+  border-color: #d70040;
+  background-color: #d70040;
+  color: #fff;
 }
 .stepBox.completed .stepNum {
-  border-color: #c7511f;
+  border-color: green;
   color: #fff;
-  background: #c7511f;
+  background: green;
 }
 .stepBox::before {
   position: absolute;
@@ -407,7 +422,6 @@ a {
   left: -50%;
   z-index: 2;
 }
-
 .stepBox::after {
   position: absolute;
   content: "";
@@ -420,7 +434,7 @@ a {
 .stepBox.completed::after {
   position: absolute;
   content: "";
-  border-bottom: 2px solid #c7511f;
+  border-bottom: 2px solid green;
   width: 100%;
   top: 30px;
   left: 50%;
@@ -432,6 +446,106 @@ a {
 .stepBox:last-child::after {
   content: none;
 }
+/* Login form */
+.l_btn_div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.l_btn {
+  background-color: #004581;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 6px;
+  padding: 8px 26px;
+  font-size: 20px;
+}
+/* Business registration form  */
+
+.business_form {
+  width: 44vw;
+  margin: 3rem auto;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.73);
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.73);
+  border-radius: 5px;
+  padding: 2rem;
+}
+.large_input {
+  resize: none;
+  padding: 1rem;
+}
+.codeInput {
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  font-weight: bold;
+}
+.country_code {
+  background-color: rgb(226, 221, 213);
+  padding: 11px 20px;
+  font-weight: 700;
+  border-top-left-radius: 4px;
+}
+.sms_btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;
+}
+.sms_btn:hover {
+  color: rgb(226, 221, 213);
+}
+.focus_input:focus {
+  border: 1px solid black;
+}
+.sellinfo_form {
+  width: 60vw;
+}
+.veri_form {
+  width: 76vw;
+}
+.warning_box {
+  border: 1px solid gray;
+  margin-top: 30px;
+  padding: 1.2rem;
+  font-weight: 600;
+}
+/* create verification style  */
+
+.h_logo {
+  width: 140px;
+  cursor: pointer;
+}
+.welcome_form {
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 3rem;
+  border: 1px solid white;
+  padding: 2rem;
+  /* text-align: center; */
+  box-shadow: 0px 0px 7px 0px #018abd;
+  -webkit-box-shadow: 0px 0px 7px 0px #018abd;
+  -moz-box-shadow: 0px 0px 7px 0px #018abd;
+}
+.payment_btn {
+  background-color: #018abd;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: white;
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1rem;
+}
+/* Tax information form  */
 
 @media (min-width: 1200px) {
   .cat-card {
@@ -478,5 +592,55 @@ a {
   }
   .cat-container-inner {
     transform: translateY(-50px);
+  }
+}
+@media (max-width: 1200px) and (min-width: 400px) {
+  .business_form {
+    width: 90vw;
+  }
+}
+@media (max-width: 930px) {
+  .box2_wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 399px) and (min-width: 200px) {
+  .business_form {
+    width: 98vw;
+  }
+}
+@media (max-width: 770px) {
+  .stepTx {
+    font-size: 12px;
+  }
+  .stepNum {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  .stepBox::before {
+    top: 15px;
+  }
+  .stepBox::after {
+    top: 15px;
+  }
+  .stepBox.completed::after {
+    top: 15px;
+  }
+  .checkbox label {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 500px) {
+  .wrap_div {
+    flex-wrap: wrap;
+  }
+  .wrap_input {
+    margin-left: 0px !important;
+    margin-top: 10px;
+  }
+  .stepTx {
+    font-size: 8px;
   }
 }

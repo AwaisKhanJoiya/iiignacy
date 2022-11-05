@@ -1,39 +1,32 @@
 import { useState } from "react";
 import BackButton from "../../../Components/BackButton";
 import CloseIcon from "../../../Components/CloseIcon";
+import BankAccount from "./BillAccount/BankAccount";
+import MobileMoneyAccount from "./BillAccount/MobileMoneyAccount";
+import PaypalAccount from "./BillAccount/PaypalAccount";
+import BillingInfo from "./BillingInfo";
+import BusinessInfo from "./BusinessInfo";
+import SellerInfo from "./SellerInfo";
+import StoreInfo from "./StoreInfo";
+import Verification from "./Verification";
 
 const MoreInfo = () => {
+  const [selected, setSelected] = useState("business");
+
   return (
-    <div className="p-4">
+    <div className="minfo_page p-4">
       <BackButton />
       <CloseIcon />
-      <div className="container mt-5">
-        <div className="d-flex justify-content-between w-100 stepsContainer">
-          <div className="stepBox completed">
-            <p className="stepNum">1</p>
-            <span className="stepTx">Business information</span>
-          </div>
-          <div className="stepBox inProgress">
-            <p className="stepNum">2</p>
-            <span className="stepTx">Seller information</span>
-          </div>
-          <div className="stepBox">
-            <p className="stepNum">3</p>
-            <span className="stepTx">Billing</span>
-          </div>
-          <div className="stepBox">
-            <p className="stepNum">4</p>
-            <span className="stepTx">Store</span>
-          </div>
-          <div className="stepBox">
-            <p className="stepNum">5</p>
-            <span className="stepTx">Verification</span>
-          </div>
-        </div>
-      </div>
-      {/* {selected === "form" && <SellerForm setSelected={setSelected} />}
-      {selected === "photos" && <SellerPhotos setSelected={setSelected} />}
-      {selected === "create" && <CreateSeller setSelected={setSelected} />} */}
+      {selected === "business" && <BusinessInfo setSelected={setSelected} />}
+      {selected === "sinfo" && <SellerInfo setSelected={setSelected} />}
+      {selected === "billinfo" && <BillingInfo setSelected={setSelected} />}
+      {selected === "mma" && <MobileMoneyAccount setSelected={setSelected} />}
+      {selected === "ppa" && <PaypalAccount setSelected={setSelected} />}
+      {selected === "ba" && <BankAccount setSelected={setSelected} />}
+      {selected === "store" && <StoreInfo setSelected={setSelected} />}
+      {selected === "verification" && (
+        <Verification setSelected={setSelected} />
+      )}
     </div>
   );
 };

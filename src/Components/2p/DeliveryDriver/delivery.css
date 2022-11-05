@@ -1,0 +1,172 @@
+.car_container {
+  background-color: black;
+  min-height: 100vh;
+}
+.car_login_btn {
+  outline: none;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 6px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1rem;
+}
+.car_login_btn:hover {
+  background-color: white;
+  color: black;
+}
+.car_form {
+  color: white;
+  border: 2px solid white;
+  box-shadow: -1px 1px 13px -2px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: -1px 1px 13px -2px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: -1px 1px 13px -2px rgba(0, 0, 0, 0.6);
+  width: 46vw;
+  margin: 1rem auto;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+}
+.car_heading {
+  letter-spacing: 1px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.car_next_btn {
+  width: 20vw;
+  outline: none;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 6px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0.8rem;
+}
+.car_next_btn:hover {
+  background-color: white;
+  color: black;
+}
+.personal_next_btn {
+  width: 100%;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 4px;
+  color: white;
+  background: black;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  /* margin: 2rem 0; */
+}
+button.personal_next_btn,
+.car_next_btn,
+.car_login_btn {
+  transition: all 0.3s linear;
+}
+
+button.personal_next_btn:hover {
+  background-color: white;
+  color: black;
+}
+.code_input {
+  width: 4rem;
+  height: 4rem;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid white;
+  background-color: black;
+}
+.otcode {
+  width: 28vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.pictures_form {
+  width: 70vw;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  padding: 2rem 0.6rem;
+  border-radius: 10px;
+}
+.picture_btn {
+  font-size: 18px;
+  width: 308px;
+  padding: 14px 0px;
+  border-radius: 4px;
+  margin: 1.4rem;
+  margin-bottom: 8px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+}
+.picture_btn:hover {
+  font-weight: 500;
+}
+.picbtns {
+  width: 308px;
+}
+.warning {
+  border: 1px solid white;
+  margin-top: 30px;
+  padding: 1.2rem 2rem;
+  font-weight: 600;
+}
+@media (max-width: 1000px) {
+  .car_form {
+    width: 70vw;
+  }
+  .otcode {
+    width: 40vw;
+  }
+  .code_input {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .car_form {
+    width: 80vw;
+
+    margin: 1rem auto;
+    padding: 3rem 1rem;
+  }
+  .car_navbar {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+}
+@media (max-width: 500px) {
+  .pictures_form {
+    width: 70vw;
+    margin-top: 3rem;
+  }
+  .institute_div {
+    flex-wrap: wrap;
+  }
+  .picture_btn {
+    font-size: 10px;
+    width: 200px;
+    padding: 8px 0;
+  }
+  .car_login_btn {
+    width: 200px;
+  }
+  .label {
+    margin-top: 8px;
+  }
+}

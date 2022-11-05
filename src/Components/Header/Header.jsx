@@ -53,7 +53,9 @@ const Header = () => {
           <Link to="/create">
             <p className="h-btn ms-4 mx-2">Seller</p>
           </Link>
-          <p className="h-btn mx-3">SIGN IN</p>
+          <Link to="/signinpage">
+            <p className="h-btn mx-3">SIGN IN</p>
+          </Link>
           <div className="mx-3">
             <span className="h-span">Return</span>
             <p className="h-btn">& Order</p>
@@ -63,7 +65,9 @@ const Header = () => {
       </div>
       <div className="d-flex align-items-center h-row h-gray-row py-2 px-3 overflowx-scroll">
         <img src={ixxi} className="h-logo" alt="ixxi" />
-        <img src={p2} className="h-logo p2 ms-2 mx-2" alt="2p" />
+        <Link to="/pbutton">
+          <img src={p2} className="h-logo p2 ms-2 mx-2" alt="2p" />
+        </Link>
         <p className="h-btn mx-3">Today's Deal</p>
         <p className="h-btn ms-4 mx-2">Entertainment</p>
         <img src={plus18} className="h-logo p2 ms-4 mx-2" alt="18+" />

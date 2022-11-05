@@ -1,0 +1,423 @@
+.driver_container {
+  background-color: black;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.white-container * {
+  color: white;
+}
+.driver_form {
+  background-color: white;
+  width: 40vw;
+  margin: 2rem auto;
+  color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: -1px 1px 13px -2px white;
+  -webkit-box-shadow: -1px 1px 13px -2px white;
+  -moz-box-shadow: -1px 1px 13px -2px white;
+}
+.driver_input {
+  width: 100%;
+  padding: 10px;
+  color: black;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+.arrows_btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-center;
+}
+
+.driver_btn {
+  color: white;
+  padding: 8px 14px;
+  background-color: black;
+  font-size: 1rem;
+  border-radius: 4px;
+  width: 100%;
+  font-weight: 500;
+  margin: 10px;
+}
+.driver_btn:hover {
+  color: rgb(179, 163, 163);
+}
+
+.arrow_icon {
+  color: white;
+  font-size: 1rem;
+  padding: 0 6px;
+}
+.e_code_form {
+  width: 46vw;
+  text-align: center;
+}
+.m_no_form {
+  width: 50vw;
+}
+.pincode {
+  width: 30vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem auto;
+}
+
+.pin_input {
+  width: 4rem;
+  height: 4rem;
+  color: black;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  outline: none;
+  margin: 10px;
+}
+.code_select {
+  /* width: 50%; */
+}
+.code_sm_div {
+  margin-left: 1rem;
+}
+
+.c_code {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.label {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+/* photo form style  */
+.photo_form {
+  width: 80vw;
+}
+.photo_input {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.photo_btn {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  width: 308px;
+  padding: 14px 0;
+  border-radius: 4px;
+  margin: 1.4rem;
+  margin-bottom: 8px;
+}
+.photo_btn:hover {
+  font-weight: 600;
+}
+
+/* Billinf form style  */
+.bill_form {
+  width: 44vw;
+  margin: 0 auto;
+}
+.m_account_form {
+  width: 50vw;
+}
+
+.circles {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  accent-color: black;
+  cursor: pointer;
+}
+
+.checkbox {
+  /* transform: scale(1.2); */
+}
+/* quizform style  */
+
+.character_form {
+  width: 48vw;
+  text-align: center;
+}
+
+.quiz_form {
+  width: 70vw;
+  margin: 0 auto;
+  padding: 2rem;
+  margin-top: 2em;
+  box-shadow: -1px 1px 13px -2px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+.q_heading {
+  position: relative;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 2em;
+  cursor: pointer;
+}
+.question_div {
+  width: 100%;
+}
+.ans_div {
+  /* box-shadow: -1px 1px 13px -2px rgba(0, 0, 0, 0.6); */
+
+  border: 3px solid whitesmoke;
+  padding: 20px;
+}
+.dropdown {
+  position: absolute;
+  top: 18px;
+  right: 4px;
+  color: black;
+}
+.quiz_btn {
+  background-color: black;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+.quiz_icon {
+  color: white;
+  font-size: 1.4rem;
+  padding: 0 14px;
+}
+/* fleetowner registration page style  */
+.r_container {
+  background: #004581;
+  min-height: 100vh;
+  color: white;
+}
+.r_form_container {
+  width: 40vw;
+  margin: 0 auto;
+}
+.r_form {
+  background-color: #018abd;
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+
+.r_heading {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.r_logo {
+  width: 130px;
+  cursor: pointer;
+}
+.r_p2logo {
+  width: 55px;
+  cursor: pointer;
+}
+.warning_white {
+  border: 1px solid white;
+  margin-top: 2rem;
+  padding: 10px 20px;
+}
+.r_login_btn {
+  outline: none;
+  background-color: #018abd;
+  color: white;
+  border: 1px solid #018abd;
+  padding: 6px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1rem;
+}
+
+.r_signup {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: white;
+  background: #004581;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.r_signup:hover {
+  background-color: #05569c;
+}
+.r_input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.select_input {
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.r_next_btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: white;
+  background: #004581;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.r_next_btn:hover {
+  background-color: #05569c;
+}
+/* personal data form style  */
+.pdata_form {
+  width: 40vw;
+  margin: 0 auto;
+  background-color: #018abd;
+  padding: 10px 40px;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+.b_next_btn {
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: white;
+  background: #004581;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem 0;
+}
+.b_next_btn:hover {
+  background-color: #05569c;
+}
+.circles1 {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+/* complete form style  */
+.complete_container {
+  min-height: 100vh;
+  background-color: black;
+}
+.comp_s_container {
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  width: 60vw;
+  margin: 3rem auto;
+  padding: 20px 30px;
+  font-weight: bold;
+}
+@media (max-width: 1000px) {
+  .driver_form {
+    width: 70vw;
+  }
+  .code_div {
+    flex-wrap: wrap;
+  }
+
+  .codeInput {
+    width: 20rem;
+  }
+
+  .code_sm_div {
+    margin-left: 0;
+    margin-top: 2rem;
+    /* width: 20rem; */
+  }
+  .code_select {
+    width: 20rem;
+  }
+  .r_form_container {
+    width: 64vw;
+  }
+  .pdata_form {
+    width: 66vw;
+    padding: 8px;
+  }
+}
+@media (max-width: 700px) {
+  .pincode {
+    /* flex-wrap: wrap; */
+    justify-content: center;
+  }
+  .pin_input {
+    width: 2rem;
+    height: 2rem;
+  }
+  .codeInput {
+    width: 14rem;
+  }
+  .code_select {
+    width: 14rem;
+  }
+  .arrows_btns {
+    flex-wrap: wrap;
+  }
+  .quiz_form {
+    width: 90vw;
+    padding: 1rem;
+    margin-top: 3em;
+  }
+  .b_next_btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .driver_form {
+    width: 70vw;
+    margin-top: 3rem;
+  }
+  .codeInput {
+    width: 6rem;
+  }
+  .code_select {
+    width: 10rem;
+  }
+  .driver_btn {
+    padding: 8px;
+    font-size: 10px;
+    margin: 10px;
+  }
+  .photo_btn {
+    font-size: 10px;
+    width: 200px;
+    padding: 8px 0;
+  }
+  .arrows_btns {
+    flex-wrap: wrap;
+  }
+  .b_next_btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .r_form_container {
+    width: 90vw;
+  }
+  .pdata_form {
+    width: 90vw;
+  }
+}

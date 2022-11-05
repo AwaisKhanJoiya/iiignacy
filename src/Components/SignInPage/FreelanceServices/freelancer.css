@@ -1,0 +1,30 @@
+.f_Form_input * {
+  color: white;
+}
+.email_btn {
+  background-color: #084d89;
+}
+.email_btn:hover {
+  background-color: #0669c5;
+}
+.google_btn {
+  background-color: rgb(213, 16, 16);
+}
+.google_btn:hover {
+  background-color: rgb(237, 73, 73);
+}
+.facebook_btn {
+  background-color: #065ba6;
+}
+.facebook_btn:hover {
+  background-color: #097de1;
+}
+.apple_btn {
+  background-color: green;
+}
+.apple_btn:hover {
+  background-color: rgb(8, 162, 8);
+}
+.icons {
+  margin-right: 22px;
+}
