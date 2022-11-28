@@ -1,4 +1,3 @@
-import { fontSize } from "@mui/system";
 import React from "react";
 import p2logo from "../../../assets/2p.png";
 import ladycar from "../../../assets/ladycar.png";
