@@ -29,6 +29,7 @@ import WelcomePage from "./Create/Seller/VerificationSeller/WelcomePage";
 import TaxInfo from "./Create/Seller/VerificationSeller/TaxInfo";
 import SorryForm1 from "./Create/Seller/VerificationSeller/SorryForm1";
 import SorryForm2 from "./Create/Seller/VerificationSeller/SorryForm2";
+import RealEstate from "./Home/RealEstate/RealEstate";
 
 const CRoutes = () => {
   return (
@@ -65,6 +66,7 @@ const CRoutes = () => {
       <Route path="/sorry2" element={<SorryForm2 />} />
       <Route path="/welcome" element={<WelcomePage />} />
       <Route path="/tax" element={<TaxInfo />} />
+      <Route path="/home" element={<RealEstate />} />
     </Routes>
   );
 };

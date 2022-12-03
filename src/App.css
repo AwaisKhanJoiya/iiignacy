@@ -545,7 +545,81 @@ a {
   font-weight: 700;
   margin: 1rem;
 }
-/* Tax information form  */
+/* seasonal page style  */
+.third_img {
+  width: 100vw;
+}
+.third_img img {
+  width: 100%;
+  object-fit: cover;
+}
+.entertainment_navbar {
+  background-color: rgb(234, 237, 237);
+  /* padding: 10px 20px; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.circle {
+  width: 5rem;
+  /* height: 3rem; */
+  background-color: white;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 6px;
+  padding-top: 10px;
+  cursor: pointer;
+  text-align: center;
+  /* position: relative; */
+}
+.circle:hover {
+  color: rgb(54, 46, 46);
+}
+.e_container {
+  background-color: rgb(234, 237, 237);
+  height: 90vh;
+  padding-top: 2rem;
+}
+.e_btn {
+  background-color: gray;
+  color: white;
+}
+
+.wines_img img {
+  width: 100%;
+}
+.fashion_img {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+.fashion_img img {
+  width: 33%;
+  object-fit: contain;
+  height: 100%;
+}
+.e_cat_container {
+  position: relative;
+}
+.category {
+  position: absolute;
+  left: 30px;
+  top: 0 !important;
+}
+.dropdown_btn {
+  background-color: white !important;
+  color: gray !important;
+  font-weight: bold !important;
+  border: none !important;
+  border-radius: 2px !important;
+}
 
 @media (min-width: 1200px) {
   .cat-card {

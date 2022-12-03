@@ -11,7 +11,7 @@ import flag from "../../assets/uk-flag.png";
 import ixxi from "../../assets/ixxi.png";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ setSelected }) => {
   return (
     <>
       <div className="header d-flex justify-content-between align-items-center h-row h-first-row py-2 px-3 flex-wrap">
@@ -68,10 +68,25 @@ const Header = () => {
         <Link to="/pbutton">
           <img src={p2} className="h-logo p2 ms-2 mx-2" alt="2p" />
         </Link>
-        <p className="h-btn mx-3">Today's Deal</p>
-        <p className="h-btn ms-4 mx-2">Entertainment</p>
-        <img src={plus18} className="h-logo p2 ms-4 mx-2" alt="18+" />
-        <p className="h-btn ms-4 mx-2">Fashion</p>
+        <p className="h-btn mx-3" onClick={() => setSelected("season")}>
+          Today's Deal
+        </p>
+        <p
+          className="h-btn ms-4 mx-2"
+          onClick={() => setSelected("entertainment")}
+        >
+          Entertainment
+        </p>
+        <img
+          src={plus18}
+          className="h-logo p2 ms-4 mx-2"
+          alt="18+"
+          onClick={() => setSelected("eighteen")}
+        />
+
+        <p onClick={() => setSelected("fashion")} className="h-btn ms-4 mx-2">
+          Fashion
+        </p>
       </div>
       <div
         className="d-flex align-items-center h-row h-gray-row py-2 px-3 overflowx-scroll"
@@ -91,7 +106,9 @@ const Header = () => {
         <p className="h-btn ms-4 m-2">Refund & Return</p>
         <p className="h-btn ms-4 m-2">iiignacy Global</p>
         <p className="h-btn ms-4 m-2">Agriculture & Artisanal</p>
-        <p className="h-btn ms-4 m-2">Property & Real Estate</p>
+        <Link to="home">
+          <p className="h-btn ms-4 m-2">Property & Real Estate</p>
+        </Link>
       </div>
     </>
   );

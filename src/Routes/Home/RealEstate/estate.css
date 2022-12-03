@@ -1,0 +1,328 @@
+.rs_navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* height: 14vh; */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.73);
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.73);
+}
+.r_nav {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+.menu_list {
+  flex: 10;
+}
+.menu_list > ul {
+  text-transform: uppercase;
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+  list-style: none;
+}
+.menu_list > ul > li {
+  color: #166283;
+  font-size: 12px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.menu_list > ul > li:hover {
+  cursor: pointer;
+  color: #6698ae;
+}
+.text_logo {
+  margin-top: 16px;
+  text-align: center;
+}
+.text_logo span:nth-of-type(1) {
+  color: #6698ae;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.text_logo span:nth-of-type(2) {
+  color: #e95a50;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-left: -8px;
+}
+.text_logo p {
+  color: #092b49;
+  font-size: 1.2rem;
+  margin-top: -4px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.l_nav {
+  background-color: #092b49;
+  width: 54px;
+  height: 54px;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.l_nav:hover {
+  transform: scale(1.1);
+}
+.home_body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../../../assets/dining.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.inner_text {
+  margin-top: 6rem;
+}
+.inner_text h1 {
+  font-size: 6rem;
+  color: #092b49;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-top: 6rem;
+}
+.inner_text p {
+  font-size: 1.8rem;
+  color: #092b49;
+  letter-spacing: 1px;
+}
+/* meet anne style here  */
+.meet_container {
+  margin: 5rem 0;
+}
+.meet_container h1 {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  color: #092b49;
+  font-weight: bold;
+  margin-bottom: 6rem;
+}
+.l_meet {
+  margin-right: 2rem;
+}
+.r_meet {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  position: relative;
+}
+.meet_btn {
+  background-color: #092b49;
+  color: #ffff;
+  padding: 8px 26px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  transition: 0.4s ease-in;
+  position: absolute;
+  bottom: 4px;
+}
+.meet_btn:hover {
+  background-color: #e95a50;
+}
+p {
+  font-weight: 400;
+  font-size: 15px;
+  color: gray;
+}
+.l_meet img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.l_meet h2 {
+  margin: 2rem 0 1.4rem 0;
+  text-align: center;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  color: #092b49;
+  font-weight: 700;
+}
+.l_meet p {
+  text-align: center;
+  font-size: 1rem;
+  color: #092b49;
+  margin: -3px 0;
+  cursor: pointer;
+}
+.dream_container {
+  height: 130vh;
+  margin: 6rem 0;
+  background-image: url("../../../assets/table.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blue_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  background-color: #6698ae;
+  /* padding: 3rem; */
+}
+.blue_box h1 {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.form_container {
+  display: flex;
+  flex-direction: column;
+  width: 78%;
+  background-color: rgb(245, 239, 239);
+  padding: 1rem;
+  border-radius: 4px;
+}
+.form_container input {
+  cursor: default;
+}
+
+.select {
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid rgb(209, 200, 200);
+  color: rgb(200, 185, 185);
+  font-size: 14px;
+  margin: 5px 0;
+  width: 46%;
+  padding: 5px;
+  font-weight: 400;
+  border-radius: 2px;
+  padding-left: 6px;
+}
+.form_container select:hover {
+  background-color: rgb(244, 231, 231);
+}
+.form_container button {
+  background-color: #092b49;
+  color: #fff;
+  border: none;
+  text-align: center;
+}
+.listings_btn {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 10px 20px;
+  font-weight: 400;
+  position: relative;
+  margin-top: 6rem;
+}
+.seat_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.seat_container span {
+  font-size: 5rem;
+  color: #092b49;
+  font-weight: 700;
+  /* letter-spacing: 1px; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+.seat_container p {
+  font-size: 1.6rem;
+  color: #092b49;
+}
+.testimonial {
+  background-image: linear-gradient(
+      rgba(21, 59, 60, 0.5),
+      rgba(21, 59, 60, 0.5)
+    ),
+    url("../../../assets/seat.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.swiper {
+  width: 56%;
+  text-align: center;
+  height: 50vh;
+  margin-top: 3rem;
+}
+.swiper * {
+  color: white;
+}
+.text_swiper p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+.text_swiper span {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 26px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  background-color: white;
+}
+.swiper-pagination-bullet-active {
+  background-color: #092b49 !important;
+}
+/* footer style  */
+.footer_container {
+  background-color: #6698ae;
+  margin-top: 1.4rem;
+  padding-top: 4rem;
+}
+.l_foot span:nth-of-type(1) {
+  color: #092b49;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.l_foot span:nth-of-type(2) {
+  color: #e95a50;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.l_foot p {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+.r_foot * {
+  color: #fff;
+}
+.r_foot p:nth-of-type(1) {
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: normal;
+  text-align: end;
+}
+.r_foot p:nth-of-type(2) {
+  font-weight: 500;
+  font-size: 16px;
+}
