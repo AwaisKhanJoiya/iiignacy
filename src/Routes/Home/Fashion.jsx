@@ -14,14 +14,10 @@ const Fashion = () => {
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
-          <Dropdown.Item href="#/action-1"> Wines & Spirits</Dropdown.Item>
-          <Dropdown.Item href="#/action-2"> Tobacco</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Alcoholic Products</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Adult Books</Dropdown.Item>
-          <Dropdown.Item href="#/action-3"> Erotic Movies</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">
-            Other restricted items
-          </Dropdown.Item>
+          <Dropdown.Item href="#/action-1"> Women</Dropdown.Item>
+          <Dropdown.Item href="#/action-2"> Curve</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">Men</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">Kids</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
       <div className="fashion_img">

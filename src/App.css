@@ -620,7 +620,16 @@ a {
   border: none !important;
   border-radius: 2px !important;
 }
-
+.booking_imgs {
+  padding: 3rem;
+}
+.booking_imgs img {
+  width: 30%;
+  height: 40vh;
+  object-fit: contain;
+  border-radius: 10px;
+  margin: auto 10px;
+}
 @media (min-width: 1200px) {
   .cat-card {
     width: 25%;

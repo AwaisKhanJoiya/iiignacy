@@ -99,16 +99,22 @@ const Header = ({ setSelected }) => {
         <p className="h-btn ms-4 m-2">Supermarket</p>
         <p className="h-btn ms-4 m-2">Pharmacy</p>
         <p className="h-btn ms-4 m-2">Health & Beauty</p>
-        <p className="h-btn ms-4 m-2">Booking</p>
+        <p className="h-btn ms-4 m-2" onClick={() => setSelected("booking")}>
+          Booking
+        </p>
         <p className="h-btn ms-4 m-2">Professional services</p>
         <p className="h-btn ms-4 m-2">Gift Card</p>
         <p className="h-btn ms-4 m-2">Buy Again</p>
         <p className="h-btn ms-4 m-2">Refund & Return</p>
         <p className="h-btn ms-4 m-2">iiignacy Global</p>
         <p className="h-btn ms-4 m-2">Agriculture & Artisanal</p>
-        <Link to="home">
-          <p className="h-btn ms-4 m-2">Property & Real Estate</p>
-        </Link>
+
+        <p className="h-btn ms-4 m-2">
+          <Link className="text-white" to="home">
+            {" "}
+            Property & Real Estate
+          </Link>
+        </p>
       </div>
     </>
   );

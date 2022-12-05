@@ -7,6 +7,7 @@ import Entertainment from "./Entertainment";
 import Eighteen from "./Eighteen";
 import EighteenCat from "./EighteenCat";
 import Fashion from "./Fashion";
+import Booking from "./Booking";
 // import RealEstateHome from "./RealEstate/RealEstateHome";
 
 const Home = () => {
@@ -23,7 +24,7 @@ const Home = () => {
       {selected === "eighteen" && <Eighteen setSelected={setSelected} />}
       {selected === "categury" && <EighteenCat setSelected={setSelected} />}
       {selected === "fashion" && <Fashion setSelected={setSelected} />}
-      {/* {selected === "home" && <RealEstateHome setS-elected={setSelected} />} */}
+      {selected === "booking" && <Booking setS-elected={setSelected} />}
 
       <Footer />
     </>
